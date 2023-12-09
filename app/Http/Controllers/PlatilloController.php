@@ -49,7 +49,7 @@ class PlatilloController extends Controller
 
 
             if($request->imagen_path == null){
-                $rutaDestino = '/public/sushi.png';
+                $rutaDestino = 'sushi.png';
             }
     
             $platillo = Platillo::create([
@@ -109,7 +109,7 @@ class PlatilloController extends Controller
             $imagen->move(public_path(''), $nombreImagen);
         }
         if($request->imagen_path == null){
-            $rutaDestino = '/public/sushi.png';
+            $rutaDestino = 'sushi.png';
         }
 
         $platillo->update([
